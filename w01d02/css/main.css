@@ -1,0 +1,56 @@
+/*
+Colors to use:
+dark blue: #06365f
+light blue: #1c5380
+*/
+
+body {
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-image: url("../images/bgtile.png");
+  background-repeat: repeat-x;
+}
+
+.phone{
+	position: relative;
+    top: 70px;
+    left: 20px;
+
+
+}
+.instagram_title{
+	position: relative;
+    
+
+}
+.insta_text{
+	/*border: 5px;
+	border: solid blue;*/
+	background-image: url("../images/frame.png");
+	padding:25px;
+	border-radius: 25px;
+	width:450px;
+	top: 480px;
+    left: 500px;
+}
+ul{
+	list-style-type: none;
+
+}
+ul li{
+	display: inline;
+}
+.float{
+	float: right;
+	margin-top: 200px;
+	margin-right: 50px;
+}
+footer{
+	margin-top: 200px;
+	color:#1c5380;
+	margin-left: 200px;
+	border-top: 5px;
+}
+span{
+	color:#71767c;
+}
