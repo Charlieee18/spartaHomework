@@ -10,11 +10,14 @@ body {
   background-image: url("../images/bgtile.png");
   background-repeat: repeat-x;
 }
-
+h1 {
+	color:#1c5380;
+}
 .phone{
 	position: relative;
     top: 70px;
     left: 20px;
+    margin-left: 20px;
 
 
 }
@@ -27,6 +30,7 @@ body {
 	/*border: 5px;
 	border: solid blue;*/
 	background-image: url("../images/frame.png");
+	background-size: 100% 100%;
 	padding:25px;
 	border-radius: 25px;
 	width:450px;
