@@ -12,11 +12,12 @@ body {
 }
 h1 {
 	color:#1c5380;
+
 }
 .phone{
 	position: relative;
     top: 70px;
-    left: 20px;
+    left: 200px;
     margin-left: 20px;
 
 
@@ -27,6 +28,9 @@ h1 {
 
 }
 .insta_text{
+	font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
 	/*border: 5px;
 	border: solid blue;*/
 	background-image: url("../images/frame.png");
@@ -47,7 +51,7 @@ ul li{
 .float{
 	float: right;
 	margin-top: 200px;
-	margin-right: 50px;
+	margin-right: 200px;
 }
 footer{
 	margin-top: 200px;
