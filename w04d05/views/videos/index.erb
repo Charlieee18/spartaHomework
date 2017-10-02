@@ -1,0 +1,9 @@
+<h1>Welcome to the homepage</h1>
+
+<% @videos.each do |video| %>
+<div>
+  <h3><a href="/<%= video.id %>"><%= video.title %></a></h3>
+  <p><%= video.description %></p>
+  
+</div>
+<% end %>

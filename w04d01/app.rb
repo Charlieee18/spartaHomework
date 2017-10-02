@@ -1,3 +1,5 @@
+
+
 puts "Which Calculator? (ad)vanced or (b)asic?"
  which_calc = gets.chomp
 
@@ -75,13 +77,13 @@ elsif user_input == ("bmi")
 
 	puts num1/(num2 * num2)
 
-elsif user_input == ("i")
-	puts "Insert your weight in pounds"
-	num1 = gets.chomp.to_f
-	puts "Insert your Height in Inches"
-	num2 = gets.chomp.to_f
-	puts (num1/(num2 * num2)) * 703
+	elsif user_input == ("i")
+		puts "Insert your weight in pounds"
+		num1 = gets.chomp.to_f
+		puts "Insert your Height in Inches"
+		num2 = gets.chomp.to_f
+		puts (num1/(num2 * num2)) * 703
 
 
-end
+	end
 end
