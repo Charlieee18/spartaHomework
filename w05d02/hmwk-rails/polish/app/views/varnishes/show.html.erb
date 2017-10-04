@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @varnish.colour %>
+</p>
+
+<p>
+  <strong>Shade:</strong>
+  <%= @varnish.shade %>
+</p>
+
+<p>
+  <strong>sort:</strong>
+  <%= @varnish.sort %>
+</p>
+
+<p>
+  <strong>image:</strong>
+  <%= @varnish.image %>
+</p>
+<p>
+   <strong>Company:</strong>
+  <%= @varnish.company.name %>
+</p>
+
+<%= link_to 'Edit', edit_varnish_path(@varnish) %> |
+<%= link_to 'Back', varnishes_path %>

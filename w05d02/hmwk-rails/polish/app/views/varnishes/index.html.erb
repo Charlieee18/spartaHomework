@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Varnishes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Colour</th>
+      <th>Shade</th>
+      <th>Sort</th>
+      <th>Image</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @varnishes.each do |varnish| %>
+      <tr>
+        <td><%= varnish.colour %></td>
+        <td><%= varnish.shade %></td>
+        <td><%= varnish.sort %></td>
+        <td><%= varnish.image %></td>
+        <td><%= link_to 'Show', varnish %></td>
+        <td><%= link_to 'Edit', edit_varnish_path(varnish) %></td>
+        <td><%= link_to 'Destroy', varnish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Varnish', new_varnish_path %>

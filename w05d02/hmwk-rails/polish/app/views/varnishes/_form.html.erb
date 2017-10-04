@@ -1,0 +1,45 @@
+<%= form_with(model: varnish, local: true) do |form| %>
+  <% if varnish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(varnish.errors.count, "error") %> prohibited this varnish from being saved:</h2>
+
+      <ul>
+      <% varnish.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ 
+  <div class="field">
+    <%= form.label :colour %>
+    <%= form.text_field :colour, id: :varnish_colour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shade %>
+    <%= form.text_field :shade, id: :varnish_shade %>
+  </div>
+  <div class="field">
+    <%= form.label :sort %>
+    <%= form.text_field :sort, id: :varnish_sort %>
+  </div>
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :varnish_image %>
+  </div>
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.collection_select :company_id, Company.all, :id, :name %>
+  </div>
+
+  <!-- <div class="field">
+    <%# form.label %>
+    <%# form.date_select %>
+  </div> -->
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
